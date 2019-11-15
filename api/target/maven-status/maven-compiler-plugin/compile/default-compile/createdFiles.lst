@@ -1,0 +1,7 @@
+com\hansi\cloud\service\test\TestFeignService.class
+com\hansi\cloud\service\test\TestRibbonService.class
+com\hansi\cloud\feignFall\test\TestFall.class
+com\hansi\cloud\service\test\TestServiceForTcc.class
+com\hansi\cloud\feignFall\test\TestFall$1.class
+com\hansi\cloud\entity\test\Test2.class
+com\hansi\cloud\entity\test\Test.class

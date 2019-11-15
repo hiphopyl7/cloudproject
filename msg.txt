@@ -1,0 +1,10 @@
+server项目是注册中心：18xxx  cloud-eureka
+
+provider是服务提供：280xx   app-provider-base
+provider2是服务提供：281xx   app-provider-s
+
+consumer是消费端：38xxx   app-consumer
+
+
+lcntcc 是分布式事务服务端 7090
+

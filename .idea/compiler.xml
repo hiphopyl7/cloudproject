@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api" />
+        <module name="api (1) (com.hansi.com)" />
+        <module name="consumer" />
+        <module name="lcntcc" />
+        <module name="provider" />
+        <module name="providerfor2" />
+        <module name="server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api (1) (com.hansi.com)" options="" />
+      <module name="consumer" options="-parameters" />
+      <module name="lcntcc" options="-parameters" />
+      <module name="provider" options="-parameters" />
+      <module name="providerfor2" options="-parameters" />
+      <module name="server" options="-parameters" />
+    </option>
+  </component>
+</project>

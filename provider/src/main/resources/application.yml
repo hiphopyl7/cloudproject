@@ -1,0 +1,53 @@
+server:
+  port: 28002
+
+#mybatis:
+#  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+#  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+#  mapper-locations:
+#  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+
+spring:
+  application:
+    name: app-provider-base
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.jdbc.Driver   # mysql驱动包
+    url: jdbc:mysql://192.168.0.203:3306/testJee              # 数据库名称
+    username: root
+    password: 123456
+    dbcp2:
+      min-idle: 5                                           # 数据库连接池的最小维持连接数
+      initial-size: 5                                       # 初始化连接数
+      max-total: 5                                          # 最大连接数
+      max-wait-millis: 200                                  # 等待连接获取的最大超时时间
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://localhost:18080/eureka
+      #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: provider-base2
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+info:
+  app.name: this is provder
+  company.name: com.hansi.cloud
+  build.artifactId: 1
+  build.version: 1
+  desc: 提供者--用于xxx模块
+
+#指定全局配置文件的位置
+#指定sql映射文件的位置
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+#lcn事务控制
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
+  logger:
+    enabled: true
+
